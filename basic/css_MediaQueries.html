@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADVANCED CSS</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+
+      /* max = smaller thna (숫자보다 작으면) 
+         min = bigger than (숫자보다 크면) 
+         즉 width가 501px보다 크고 600px보다 작으면 div의 색을 바꿔준다. */
+      @media screen and (min-width: 501px) and (max-width: 600px) {
+        div {
+          background-color: tomato;
+        }
+      }
+
+      @media screen and (min-width: 600px) and (max-width: 800px) {
+        div {
+          background-color: black;
+        }
+      }
+      @media screen and (min-width: 800px) and (max-width: 900px) {
+        div {
+          background-color: skyblue;
+        }
+      }
+
+      /* orientation: landscape는 휴대폰이 '가로모드'일 때를 의미힌다. */
+      @media screen and (min-width: 800px) and (max-width: 1200px) and (orientation: landscape) {
+        div {
+          background-color: pink;
+        }
+      }
+
+      /* orientation: portrait는 휴대폰이 '세로모드'일 때를 의미힌다. */
+      @media screen and (min-width: 800px) and (max-width: 1200px) and (orientation: portrait) {
+        div {
+          background-color: gray;
+        }
+      }
+
+      span {
+        font-size: 36px;
+      }
+      /* 휴대폰이 세로모드일때에는 span display를 none으로 보여주지 않고 가로모드가 되면 span을 띄워주도록 한다. */
+      @media screen and (orientation: portrait) {
+        span {
+          display: none;
+        }
+      }
+
+      /* print를 할 때 어떻게 보여줄지 설정할 수 있다. 이 외에도 macOS등의 레티나 디스플레이도 인식 할 수 있다. */
+      @media print {
+        body {
+          background-color: slategray;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>Please Flip Your Phone :(</span>
+  </body>
+</html>

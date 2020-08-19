@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Practice
+    </title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+      }
+
+      div {
+        width: 110px;
+        height: 110px;
+        background-color: wheat;
+      }
+      div:first-child {
+        background-color: tomato;
+      }
+      div:last-child {
+        background-color: teal;
+      }
+      div:nth-child(3) {
+        background-color: thistle;
+      }
+      div:nth-child(5) {
+        background-color: skyblue;
+      }
+      div:nth-child(even) {
+        background-color: crimson;
+      } /* even : 짝수번째를 선택해 준다. */
+      div:nth-child(odd) {
+        /* odd : 홀수번재를 선택해준다. */
+      }
+      /* 2번째 부터 시작하고 싶다면 nth-child(2n) 
+      그 외에도 (2n + 1), (4n + 1)등 여러 조합이 가능하다.*/
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="green">pesudo seleotor</div>
+      <div class="green">pesudo seleotor</div>
+      <div class="green">pesudo seleotor</div>
+      <div class="green">pesudo seleotor</div>
+      <div class="green">pesudo seleotor</div>
+      <div class="green">pesudo seleotor</div>
+      <div class="green">pesudo seleotor</div>
+    </div>
+  </body>
+</html>
+
+<!--
+  pesudo selectors : 구체적인 클래스 선택시 이용
+  :last-child 마지막 child element 선택
+-->

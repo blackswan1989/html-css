@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Practice
+    </title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        color: white;
+        background-color: teal;
+      }
+      #green {
+        width: 500px;
+        height: 500px;
+        position: fixed;
+        opacity: 0.2;
+        font-size: 5rem;
+      }
+      #other {
+        top: 200px; /* top, bottom등의 값을 주면 다른 레이어가 된다.*/
+        left: 100px;
+        background-color: aquamarine;
+        width: 350px;
+        /* position: fixed; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="green">position fixed</div>
+    <div id="other">position fixed</div>
+  </body>
+</html>
+
+<!--
+  position: fixed 스크롤 등을 해도 화면에 고정시켜준다.
+  top, bottom등의 값을 주면 다른 레이어가 된다.
+-->

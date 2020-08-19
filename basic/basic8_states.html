@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Practice
+    </title>
+    <style>
+      input {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+      }
+
+      input:active {
+        /* 마우스가 클릭하는 중일 때의 이벤트 */
+        background-color: cornflowerblue;
+      }
+
+      input:hover {
+        /* 마우스를 해당 input에 올렸을 때의 이벤트 */
+        background-color: cadetblue;
+      }
+
+      input:focus {
+        /* 마우스나 키보드로 선택했을때의 이벤트 */
+        background-color: coral;
+      }
+
+      input:focus-within {
+        /* focus 상태인 자식을 가진 부모 엘리먼트에 적용된다. */
+        background-color: crimson;
+      }
+
+      form {
+        border: 2px solid black;
+      }
+
+      form:hover input {
+        /* form에 마우스를 올렸을때 input의 이벤트 발생 */
+        background-color: yellowgreen;
+      }
+
+      form:hover input:focus {
+        /* form에 마우스를 올렸을때 + input을 클릭했을 때 이벤트 발생 */
+        background-color: violet;
+      }
+
+      a:visited {
+        /* 해당 링크를 방문하고 났을때의 컬러 이벤트 */
+        color: darkgreen;
+      }
+
+      input::placeholder {
+        /* placeholoder를 꾸며준다 */
+        color: pink;
+      }
+
+      p::selection {
+        /* 해당 태그를 마우스클릭&드래그 할 때의 이벤트*/
+        background-color: tomato;
+        color: white;
+      }
+
+      p::first-letter {
+        /* 해당 글의 첫번째 글씨에 주는 이벤트 */
+        font-size: 2rem;
+        background-color: turquoise;
+      }
+
+      p::first-line {
+        /* 첫번째 줄에 주는 이벤트 */
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </form>
+    <a href="http://apple.com">apple site</a>
+    <input type="text" placeholder="placeholder style" />
+    <p>recap.recap.recap.recap.recap.recap.recap.recap.</p>
+  </body>
+</html>
+
+<!--
+-->

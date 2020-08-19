@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Practice position
+    </title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: wheat;
+        /* position: relative; */
+      }
+      .green {
+        width: 100px;
+        height: 100px;
+        background-color: teal;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="green">position absolute</div>
+    </div>
+  </body>
+</html>
+
+<!--
+  position: absolute (relative를 기준으로 이동한다.)
+  가장 가까운 relative 부모를 기준으로 이동시켜준다. 가장 가까운 부모는 div이지만 div가 relative가 아니기 때문에 body를 기준으로 움직이게 된다. 따라서 부모 div에 relative를 설정해주면 div안에서 움직이게 된다.
+-->

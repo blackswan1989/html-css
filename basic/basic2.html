@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Practice</title>
+    <style>
+      * {
+      }
+      html {
+        background-color: black;
+      }
+      body {
+        margin: 10px 15px; /* 값이 두개면 상하 & 좌우 적용*/
+        padding: 5px 10px 15px 50px; /*4개는 상,좌,하,우(시계방향) */
+        background-color: lightgray;
+      }
+      div {
+        height: 150px;
+        width: 150px;
+        margin: 50px 50px;
+        background-color: tomato;
+        border: 2px solid black;
+      }
+      #box {
+        background-color: pink;
+      }
+      span {
+        margin: 10px;
+        padding: 20px;
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-color: yellow;
+        border: 2px solid black;
+      }
+      #spanbox {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      div
+      <div id="box">div</div>
+    </div>
+    <div>
+      div
+      <div id="box">div</div>
+    </div>
+    <div>
+      div
+      <div id="box">div</div>
+    </div>
+    <span>span<span id="spanbox">span</span></span>
+    <span>span<span id="spanbox">span</span></span>
+    <span>span<span id="spanbox">span</span></span>
+  </body>
+</html>
+
+<!--
+  block 속성은 같은 줄에 위치 할 수 없다. ex)div, header
+  inline 속성은 같은 줄에 위치 한다. ex)span, a, link, image
+  display: inline은 height와 width를 가질 수 없다.
+-->
+
+<!--
+  margin : border의 경계 바깥공간
+  padding : 
+
+  collapsing margin 현상 :
+  경계가 닿으면 margin이 겹쳐져 margin 값을 줘도 경계 바깥으로 튀어나가는 경우가 있다. 이럴땐 padding을 주면 경계 내부에서 공간을 주게 되므로 해결 된다.
+-->

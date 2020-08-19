@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="My Website" />
+    <link
+      rel="icon"
+      href="https://s.pinimg.com/webapp/style/images/favicon-fd1ea058.png"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <h2>hello GamJa</h2>
+    <h2>hello GamJa</h2>
+    <audio
+      controls="true"
+      src="http://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3"
+    ></audio>
+    <p>
+      <video controls width="250">
+        <source src="/media/examples/flower.webm" type="video/webm" />
+
+        <source src="/media/examples/flower.mp4" type="video/mp4" />
+
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </p>
+    <form>
+      <p>
+        <label for="first-name"> First Name : </label
+        ><input placeholder="First Name" id="first-name" type="text" required />
+      </p>
+      <p>
+        <label for="last-name"> Last Name : </label
+        ><input placeholder="Last Name" id="last-name" type="text" required />
+      </p>
+      <p>
+        <label for="email">E-mail: </label
+        ><input placeholder="Email Address" id="email" type="email" required />
+      </p>
+      <p>
+        <label for="user">User Name : </label
+        ><input placeholder="User Name" id="user" type="text" required />
+      </p>
+      <p>
+        <label for="pass">Password : </label
+        ><input
+          placeholder="Password"
+          id="pass"
+          type="password"
+          minlength="10"
+          required
+        />
+      </p>
+      <p>
+        <label for="birthday">Birth Date </label
+        ><input id="birthday" type="date" required />
+      </p>
+      <p>
+        <label for="happy-slider"> How happy are you?</label>
+        <input
+          id="happy-slider"
+          type="range"
+          min="0"
+          max="100"
+          step="10"
+          list="steplist"
+          required
+        /><datalist id="steplist">
+          <option>10</option>
+          <option>20</option>
+          <option>30</option>
+          <option>40</option>
+          <option>50</option>
+          <option>60</option>
+          <option>70</option>
+          <option>80</option>
+          <option>90</option>
+        </datalist>
+      </p>
+      <p>
+        <label for="color">What is your fav.color?</label>
+        <input id="color" type="color" required />
+      </p>
+      <input
+        type="submit"
+        id="account-submit"
+        value="Create Account"
+        required
+      />
+    </form>
+  </body>
+</html>
+
+<!-- 
+1. link 태그를 이용해 title에 icon을 붙이는 것도 가능
+2. description 태그는 정보 텍스트
+3. og:image 태그는 카카오톡에 고유 될 때 보여지는 이미지
+-->

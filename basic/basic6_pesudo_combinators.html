@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Practice
+    </title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+        font-size: 2rem;
+      }
+
+      span {
+        color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+
+      p span {
+        /* 존재하는 부모 태그를 먼저 입력 후 원하는 child만 선택 가능*/
+        color: white;
+      }
+
+      div > span {
+        /* div바로 밑의 직계 child만 선택하고자 할 때 위와 같이 사용*/
+        text-decoration: underline;
+      }
+
+      p + span {
+        /* p 다음에 오는 span을(동등한 위치의 형제 태그) 선택해준다. */
+        background-color: teal;
+      }
+
+      p ~ span {
+        /* ~을 사용하면 형제와 형제관계 모두 선택 (꼭 바로 뒤에 올 필요없다.)*/
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>hello</span>
+      <p>
+        blahblahblah
+      </p>
+      <span>p-inside<span>Seoul 248-3</span></span>
+      <span>p-outside</span>
+    </div>
+  </body>
+</html>
+
+<!--
+  pesudo selectors : 구체적인 클래스 선택시 이용
+  :last-child 마지막 child element 선택
+-->

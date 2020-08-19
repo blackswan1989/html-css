@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Practice
+    </title>
+    <style>
+      body {
+        display: flex; /* div의 부모로 div를 조종 */
+        /* flex-direction: column; */
+        height: 100vh;
+        margin: 20px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      div {
+        display: flex; /* div안의 text를 움직이게됨 */
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        background-color: teal;
+        font-size: 2rem;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>child</div>
+    <div>child</div>
+    <div>child</div>
+  </body>
+</html>
+
+<!--
+  inline-block을 사용하면 block 속성으로 설정 가능하다.
+  하지만 defult값과 반응형 디자인을 지원하지 않기 때문에 잘 사용하지 않는다. 이를 대체하기 위해 felx가 등장했다.
+
+  ! felx를 사용할 때 주의해야 할 점은 child element에는 어떤 것도 적지 말고 parent element에만 값을 주면 된다. 부모에게만 flex값을 주면 child들을 움직일 수 있게 된다.
+  ! 반면 child값에 flex를 주게 되면 또 해당 child안의 내용을 움직 일 수 있게 된다.
+-->
+
+<!--? Flex의 주축, 교차축 justify-content, align-item
+  flex값을 주고 선택 할 수 있는 justify-content속성 중
+  space-evenly는 빈 공간을 같은 크기로 나누어서 배치해준다.
+  비슷한 기능으로 space-around, space-between이 있다.
+
+  cas flexbox의 main axis(주축)와 cross axis(교차축).
+  주축은 수평이고 교차축은 수직이다. 기본적으로 justify-content는 주축에 적용이 되고, align-items은 교차축에 적용되는 property다
+
+  align-items : stretch속성은 div를 늘어나게 하는데, 현재 div의 경우에는 고정된 height값을 가지고 있어서 height 값을 없애줘야 stretch가 적용 된다.
+-->
+
+<!--? flex-direction의 column
+  colunm을 적용하면 주축은 수직이되고 교차축은 수평으로 바뀐다.
+  row가 디폴드 값이다.
+-->
+
+<!--? viewport height
+  vh : viewport height로 viewport는 screen이다.
+  100 screen height는 화면 높이의 100%를 의미한다.
+  body에 hight값이 없으면 align-item값이 제대로 적용되지 않는다.
+  1000px등으로도 설정은 가능하지만 vh값을 주는 것이 화면 크기에 따라 바뀌도록 해주기 때문에 vh를 사용하는 것이 좋다.
+-->
+
+<!--? wrap & nowrap 속성
+  screen사이즈를 바꿀때 서로 달라붙게 할 지 떨어뜨리며 움직일지의 선택 가능
+  nowrap이 디폴트값으로 wrap속성을 주면 스크린 변경시 자동으로 박스들 공간이 떨어지게 된다.
+-->
+
+<!--?  reverse 값은 각종 속성들을 반대로 바꿔준다. -->

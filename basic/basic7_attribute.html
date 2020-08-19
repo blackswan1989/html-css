@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Practice
+    </title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+      }
+
+      input:required {
+        /* input:optional 요소에 "필수"속성이 있는 경우에만 선택해준다. */
+        border: 3px solid tomato;
+      }
+
+      input:optional {
+        /* input:optional 요소에 "필수"속성이 없는 경우에만 선택해준다. */
+        border: 3px solid pink;
+      }
+
+      input[type="password"] {
+        /* input type이 password인 것을 모두 선택해준다.*/
+        background-color: black;
+      }
+
+      input[placeholder="username"] {
+        /* placeholder가 username인 모든 input을 선택해준다. */
+        background-color: skyblue;
+      }
+
+      input[placeholder~="name"] {
+        /* "~="라는 기호는 ~를 포함한다는 것으로 placeholder에 name을 포함 하는 모든 input을 선택해준다. 이 외에도 끝에오는 경우이는 "$=" 을 사용해주고 처음에 오는 경우에는 "^="를 사용해준다. */
+        background-color: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="First name" />
+      <input type="text" placeholder="Last name" />
+      <input type="text" placeholder="username" />
+      <input type="password" required placeholder="password" />
+    </form>
+  </body>
+</html>
+
+<!--
+  pesudo selectors : 구체적인 클래스 선택시 이용
+  :last-child 마지막 child element 선택
+-->

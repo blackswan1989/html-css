@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADVANCED CSS</title>
+    <style>
+      a,
+      p {
+        display: flex;
+        color: white;
+        background-color: tomato;
+        font-size: 5rem;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        transition: 0.5s ease-in-out, color 0.5s ease-in-out;
+        /* transition: all 5s ease-in-out; all을 써주면 모든 효과에 적용된다. 그 외에는 위의 color처럼 별도로 지정해 줄 수도 있다. */
+      }
+
+      /* 주의 할 점은 transition은 state가 없는 a 태그에 적용해주고, 적용 할 효과는 state를 준 a:hover에 설정을 함께 해주어야 한다. */
+
+      a:hover {
+        font-size: 6rem;
+        color: pink;
+        background-color: black;
+      }
+
+      p {
+        transition: 0.5s cubic-bezier(0.6, 0, 0.735, 0.045);
+      }
+      p:hover {
+        font-size: 7rem;
+        color: pink;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#"> Go Home </a>
+    <p>Go Home</p>
+  </body>
+</html>
