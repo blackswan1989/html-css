@@ -83,7 +83,7 @@
 
 - 여러 줄의 텍스트를 입력할 수 있는 요소를 만들 수 있다. 주로 문의 내용이나 메세지 등을 입력할 때 많이 사용된다.
 - placeholder 속성을 지정할 수 있다.
-- ex) <br><textarea name="massage" placeholder="메세지를 입력하세요"></textarea>
+- ex) <textarea name="massage" placeholder="메세지를 입력하세요"></textarea>
 
 <br>
 
