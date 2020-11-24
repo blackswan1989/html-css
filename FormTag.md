@@ -95,10 +95,13 @@
 ```
     <input type="checkbox" name="travel" value="국내" id="korea" />
     <label for="korea">국내</label>
+    
     <input type="checkbox" name="travel" value="유럽" id="eu" />
     <label for="eu">유럽</label>
+    
     <input type="checkbox" name="travel" value="미국" id="us" />
     <label for="us">미국</label>
+    
     <input type="checkbox" name="travel" value="동남아시아" id="asia" />
     <label for="asia">동남아시아</label>
 ```
