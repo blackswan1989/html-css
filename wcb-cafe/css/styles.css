@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import "home.css";
+@import "menu.css";
+@import "news.css";
 
 html {
   font-size: 100%;
@@ -27,77 +30,85 @@ a:hover {
   color: #0bd;
 }
 
-/* bg img */
+/* Media Query */
 
-#home {
-  background-image: url(../images/main-bg.jpg),
-    linear-gradient(#c9ffbf, #ffafbd);
-  min-height: 100vh;
-  background-blend-mode: luminosity;
-}
+@media (max-width: 600px) {
+  /* HOME PAGE */
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.big-bg {
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .page-title {
+    font-size: 2.5rem;
+  }
 
-/* Header */
+  .nav-container__main-nav {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 20px;
-}
+  .main-nav__list {
+    margin: 0 20px;
+  }
 
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 4%;
-}
+  .home-content {
+    margin-top: 20%;
+  }
 
-.header__logo {
-  width: 210px;
-  margin-top: 14px;
-}
+  .home-description {
+    margin: 20% 8%;
+  }
 
-.nav-container__main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  .home-button {
+    font-size: 0.8rem;
+  }
 
-.main-nav__list {
-  margin-left: 36px;
-}
+  /* NEWS PAGE */
+  .news__contents {
+    flex-direction: column;
+  }
 
-/* HOME */
+  .contents__article,
+  .contents__aside {
+    width: 100%;
+    padding: 0 1%;
+  }
 
-.home-content {
-  text-align: center;
-  margin-top: 10%;
-}
+  #news .page-title {
+    margin-top: 8%;
+  }
 
-.home-title {
-  font-size: 5rem;
-  font-weight: normal;
-}
+  .contents__aside {
+    margin-top: 60px;
+  }
 
-.home-description {
-  font-size: 1.125rem;
-  margin: 10px 0 42px;
-}
+  .article__post-info {
+    margin-bottom: 30px;
+  }
 
-.home-button {
-  font-size: 1.375rem;
-  background-color: #0bd;
-  color: #fff;
-  border-radius: 5px;
-  padding: 18px 32px;
-}
+  .post-info__date {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+  }
 
-.home-button:hover {
-  background: #0090aa;
-  color: #fff;
+  .post-info__date span {
+    font-size: 0.875rem;
+    padding-top: 2px;
+  }
+
+  .post-info__title,
+  .post-info__category {
+    margin-left: 80px;
+  }
+
+  .post-info__title {
+    font-size: 1.375rem;
+  }
+
+  .post-info__category {
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
 }
