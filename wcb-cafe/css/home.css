@@ -23,7 +23,7 @@
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 4%;
 }
@@ -57,8 +57,8 @@
 }
 
 .home-description {
-  font-size: 1.125rem;
-  margin: 10px 0 42px;
+  font-size: 1.5rem;
+  margin: 5% 0 20%;
 }
 
 .home-button {

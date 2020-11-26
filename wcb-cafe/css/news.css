@@ -15,7 +15,8 @@
 }
 
 .contents__article {
-  width: 74%;
+  width: 60%;
+  order: 2;
 }
 
 .article__post-info {
@@ -62,11 +63,12 @@
   margin-bottom: 1rem;
 }
 
+/* News Contents__aside */
+
 .contents__aside {
   width: 22%;
+  order: 3;
 }
-
-/* News Contents__aside */
 
 .aside__sub-title {
   font-size: 1.375rem;
@@ -87,4 +89,8 @@
 
 .aside__description {
   padding: 12px 10px;
+}
+
+.ad {
+  order: 3; /* order로 위치 순서 변경. */
 }
